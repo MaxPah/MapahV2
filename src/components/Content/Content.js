@@ -8,6 +8,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import myimage from '../../assets/img/trieves-panorama.jpg';
 
 const Content = () => {
     // const { classes } = props;
@@ -20,7 +21,7 @@ const Content = () => {
                         <CardActionArea>
                             <CardMedia
                                 className={'card-media'}
-                                image="/static/images/cards/contemplative-reptile.jpg"
+                                image={myimage}
                                 title="Contemplative Reptile"
                             />
                             <CardContent>
@@ -48,7 +49,7 @@ const Content = () => {
                     <CardActionArea>
                         <CardMedia
                             className={'card-media'}
-                            image="assets/img/trieves-panorama.jpg"
+                            image={myimage}
                             title="Contemplative Reptile"
                         />
                         <CardContent>
@@ -76,7 +77,7 @@ const Content = () => {
                     <CardActionArea>
                         <CardMedia
                             className={'card-media'}
-                            image="/static/images/cards/contemplative-reptile.jpg"
+                            image={myimage}
                             title="Contemplative Reptile"
                         />
                         <CardContent>
