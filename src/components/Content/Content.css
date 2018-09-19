@@ -1,3 +1,38 @@
 .card-media {
   min-height: 200px; 
 }
+
+.block-interest {
+  padding-bottom: 20px;
+}
+.parallax,
+.parallax-2 {
+  height: 400px;
+
+  /* Create the parallax scrolling effect */
+  background-image: url('http://www.paysdauvergne.fr/wp-content/uploads/2015/02/Lac-Pavin-1.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax-2 {
+  height: 550px;
+}
+
+.toto {
+  padding: 50px;
+  margin-bottom: 20px;
+}
+
+.toto2 {
+
+}
+.toto3 {
+
+}
+.toto4 {
+
+}
+.toto5 {
+}
