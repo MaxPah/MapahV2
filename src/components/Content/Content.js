@@ -10,6 +10,8 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import myimage from '../../assets/img/trieves-panorama.jpg';
 
+import './Content.css';
+
 const Content = () => {
     // const { classes } = props;
 
