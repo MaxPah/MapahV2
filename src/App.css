@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100i,400,700');
+
+body {
+  font-family: Roboto;
+}
+
 .App {
   text-align: center;
 }
@@ -39,4 +45,11 @@ html {
 div,
 .card__item {
   border-radius: 0;
+}
+
+.sticky {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 10;
 }

@@ -33,10 +33,8 @@ const Content = () => {
 
     return(
         <div>
-            <div className={'parallax'} />
-            <Grid container spacing={8} className={'main'} >
-                <Grid container spacing={24} className={'block-interest'}>
-                    <Grid item xs>
+            <Grid container padding={10} className={'block-interest'} >
+                <Grid item xs>
                         <Card className={'card__item'}>
                             <CardActionArea>
                                 <CardMedia
@@ -63,90 +61,57 @@ const Content = () => {
                                 </Button>
                             </CardActions>
                         </Card>
-                    </Grid>
-                    <Grid item xs>
-                        <Card className={'card__item'}>
-                        <CardActionArea>
-                            <CardMedia
-                                className={'card-media'}
-                                image={myimage}
-                                title="Contemplative Reptile"
-                            />
-                            <CardContent>
-                                <Typography gutterBottom variant="headline" component="h2">
-                                    Lorem 2
-                                </Typography>
-                                <Typography component="p">
-                                    Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                                    across all continents except Antarctica
-                                </Typography>
-                            </CardContent>
-                        </CardActionArea>
-                        <CardActions>
-                            <Button size="small" color="primary">
-                                Share
-                            </Button>
-                            <Button size="small" color="primary">
-                                Learn More
-                            </Button>
-                        </CardActions>
-                    </Card>
-                    </Grid>
-                    <Grid item xs>
-                        <Card className={'card__item'}>
-                        <CardActionArea>
-                            <CardMedia
-                                className={'card-media'}
-                                image={myimage}
-                                title="Contemplative Reptile"
-                            />
-                            <CardContent>
-                                <Typography gutterBottom variant="headline" component="h2">
-                                    Lizard
-                                </Typography>
-                                <Typography component="p">
-                                    Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                                    across all continents except Antarctica
-                                </Typography>
-                            </CardContent>
-                        </CardActionArea>
-                        <CardActions>
-                            <Button size="small" color="primary">
-                                Share
-                            </Button>
-                            <Button size="small" color="primary">
-                                Learn More
-                            </Button>
-                        </CardActions>
-                    </Card>
-                    </Grid>
+        </Grid>
+                <Grid item xs>
+                    <Card className={'card__item'}>
+                    <CardActionArea>
+                        <CardMedia
+                            className={'card-media'}
+                            image={myimage}
+                            title="Contemplative Reptile"
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant="headline" component="h2">
+                                Lorem 2
+                            </Typography>
+                            <Typography component="p">
+                                Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+                                across all continents except Antarctica
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                    <CardActions>
+                        <Button size="small" color="primary">
+                            Share
+                        </Button>
+                        <Button size="small" color="primary">
+                            Learn More
+                        </Button>
+                    </CardActions>
+                </Card>
                 </Grid>
             </Grid>
-            <Grid container style={{ padding: 50}} spacing={24} className={'main'} >
+            <Grid item container style={{ padding: 50}} className={'main'} >
                 {/* Main featured post */}
-                <Paper className={'toto'}>
-                    <Grid container>
-                        <Grid item md={6}>
-                            <div className={'toto'}>
-                                <Typography variant="display2" color="inherit" gutterBottom>
-                                    Title of a longer featured blog post
-                                </Typography>
-                                <Typography variant="headline" color="inherit" paragraph>
-                                    Multiple lines of text that form the lede, informing new readers quickly and
-                                    efficiently about what&apos;s most interesting in this post&apos;s contents.
-                                </Typography>
-                                <Typography variant="title" color="inherit">
-                                    Continue reading...
-                                </Typography>
-                            </div>
-                        </Grid>
+                <Grid container>
+                    <Grid item md={6}>
+                        <Typography variant="display2" color="inherit" gutterBottom>
+                            Title of a longer featured blog post
+                        </Typography>
+                        <Typography variant="headline" color="inherit" paragraph>
+                            Multiple lines of text that form the lede, informing new readers quickly and
+                            efficiently about what&apos;s most interesting in this post&apos;s contents.
+                        </Typography>
+                        <Typography variant="title" color="inherit">
+                            Continue reading...
+                        </Typography>
                     </Grid>
-                </Paper>
+                </Grid>
                 {/* End main featured post */}
                 {/* Sub featured posts */}
-                <Grid container spacing={40} className={'toto2'}>
+                <Grid item container spacing={40} className={'toto2'}>
                     {featuredPosts.map(post => (
-                        <Grid item key={post.title} spacing={12} xs={6} md={6}>
+                        <Grid item key={post.title} spacing={8} xs={6} md={6}>
                             <Card className={'toto3'}>
                                 <div className={'toto4'}>
                                     <CardContent>

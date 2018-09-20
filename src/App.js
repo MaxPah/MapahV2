@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
 import './App.css';
-import Footer from "./components/Footer/Footer";
-import Content from "./components/Content/Content";
-import CustomHeader from "./components/CustomHeader/CustomHeader";
+import Footer from "./components/Footer/Footer.jsx";
+import Content from "./components/Content/Content.jsx";
+import CustomHeader from "./components/CustomHeader/CustomHeader.jsx";
 
 class App extends Component {
   render() {
     return (
         <div>
-            <CustomHeader/>
+            <div className={'parallax'} />
+            <div className={'sticky'} >
+                <CustomHeader />
+            </div>
             <Content/>
             <Footer />
         </div>
